@@ -1,0 +1,7 @@
+Airaki
+by furrtek
+Licence: GPL-3.0-or-later
+Source: https://github.com/furrtek/Airaki
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/airaki
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

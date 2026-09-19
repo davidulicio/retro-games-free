@@ -1,0 +1,7 @@
+Attack on Voxelburg
+by nuclear
+Licence: GPL-3.0-or-later
+Source: https://github.com/MutantStargoat/voxelburg
+Catalogued by: GBA homebrew database (gbadev) — https://hh.gbdev.io/entry/attack-on-voxelburg
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

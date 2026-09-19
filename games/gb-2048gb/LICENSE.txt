@@ -1,0 +1,7 @@
+2048gb
+by Sanqui
+Licence: Zlib
+Source: https://github.com/Sanqui/2048-gb
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/2048gb
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
