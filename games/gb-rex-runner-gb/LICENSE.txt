@@ -1,0 +1,7 @@
+Rex Runner GB
+by The Void
+Licence: MIT
+Source: https://github.com/etdv-thevoid/rex-runner-gb
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/rex-runner-gb
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

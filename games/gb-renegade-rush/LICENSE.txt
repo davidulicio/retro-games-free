@@ -1,0 +1,7 @@
+Renegade Rush
+by quinnp
+Licence: MIT
+Source: https://github.com/QuinnPainter/Renegade-Rush
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/renegade-rush
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

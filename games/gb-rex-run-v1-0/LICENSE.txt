@@ -1,0 +1,7 @@
+Rex Run
+by el_seyf
+Licence: GPL-3.0
+Source: https://github.com/elseyf/rex-run-gb
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/rex-run-v1-0
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
