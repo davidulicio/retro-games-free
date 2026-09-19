@@ -1,0 +1,7 @@
+5 mazes: Master levels
+by godai / Gniazdo Światów
+Licence: CC-BY-SA 4.0
+Source: https://github.com/godai78/5-mazes-Master-levels
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/5-mazes-master-levels
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

@@ -1,0 +1,7 @@
+5 more mazes
+by godai / Gniazdo Światów
+Licence: CC-BY-SA 4.0
+Source: https://github.com/godai78/5-more-mazes
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/5-more-mazes
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
