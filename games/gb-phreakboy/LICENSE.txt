@@ -1,0 +1,7 @@
+Phreakboy (Enhanced DTMF Dialer)
+by TeamKNOx
+Licence: MIT
+Source: https://gitlab.com/teamknox/gbcphreakboy
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/phreakboy
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
