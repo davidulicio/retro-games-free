@@ -1,0 +1,7 @@
+Tuff
+by BonsaiDen
+Licence: MIT
+Source: https://github.com/BonsaiDen/Tuff.gb
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/tuff
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
