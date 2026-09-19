@@ -1,0 +1,7 @@
+Flooder
+by Oliver Balfour
+Licence: MIT
+Source: https://github.com/Obalfour/Flooder
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/flooder
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

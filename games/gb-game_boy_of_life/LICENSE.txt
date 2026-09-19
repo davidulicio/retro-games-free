@@ -1,0 +1,7 @@
+Game (Boy) of Life
+by StudioGuma
+Licence: GPL-3.0-or-later
+Source: https://github.com/StudioGuma/game_boy_of_life
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/game_boy_of_life
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.

@@ -1,0 +1,7 @@
+CueCAT reader
+by TeamKNOx
+Licence: MIT
+Source: https://gitlab.com/teamknox/gbccuecat
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/gbccuecat
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
