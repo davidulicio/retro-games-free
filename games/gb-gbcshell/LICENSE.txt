@@ -1,0 +1,7 @@
+GB-SHELL
+by TeamKNOx
+Licence: MIT
+Source: https://gitlab.com/teamknox/gbcshell
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/gbcshell
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
