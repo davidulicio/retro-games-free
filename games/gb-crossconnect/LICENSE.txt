@@ -1,0 +1,7 @@
+CrossConnect
+by quinnp
+Licence: MIT
+Source: https://github.com/QuinnPainter/CrossConnect
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/crossconnect
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
