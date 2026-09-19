@@ -1,0 +1,7 @@
+Minicraft for GBA
+by Vulcalien
+Licence: GPL-3.0-or-later
+Source: https://github.com/Vulcalien/minicraft-gba
+Catalogued by: GBA homebrew database (gbadev) — https://hh.gbdev.io/entry/minicraft-gba
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
