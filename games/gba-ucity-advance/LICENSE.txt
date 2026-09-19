@@ -1,0 +1,7 @@
+uCity Advance
+by AntonioND
+Licence: GPL-3.0-or-later
+Source: https://github.com/AntonioND/ucity-advance
+Catalogued by: GBA homebrew database (gbadev) — https://hh.gbdev.io/entry/ucity-advance
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
