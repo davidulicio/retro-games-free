@@ -1,0 +1,7 @@
+Snake
+by Yvar de Goffau
+Licence: WTFPL-2.0
+Source: https://github.com/Yvar-deGoffau/GBSnake
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/snake
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
