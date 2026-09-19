@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Player · Retro Arcade</title>
+<meta name="description" content="Browser-based console player.">
+<meta name="color-scheme" content="dark">
+<meta name="robots" content="noindex">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body class="player-page">
+
+<header class="site-header">
+  <div class="shell">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#05221c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="12" rx="4"/>
+          <path d="M7 11v4M5 13h4"/>
+          <circle cx="16" cy="12.5" r="1.1" fill="#05221c" stroke="none"/>
+          <circle cx="18.5" cy="15" r="1.1" fill="#05221c" stroke="none"/>
+        </svg>
+      </span>
+      Retro Arcade
+    </a>
+    <span class="header-spacer"></span>
+    <nav class="header-links">
+      <a class="header-link header-link-key" href="index.html#library">← Library</a>
+    </nav>
+  </div>
+</header>
+
+<main class="player-main">
+  <div class="shell">
+
+    <div class="player-bar">
+      <div class="player-id">
+        <h1 id="game-title">Loading…</h1>
+        <p class="sub" id="game-sub"></p>
+      </div>
+      <div class="player-tools">
+        <button class="btn btn-quiet btn-sm" type="button" id="btn-fullscreen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3M16 3h3a2 2 0 0 1 2 2v3M16 21h3a2 2 0 0 0 2-2v-3M8 21H5a2 2 0 0 1-2-2v-3"/></svg>
+          Fullscreen
+        </button>
+        <a class="btn btn-quiet btn-sm" id="btn-another" href="index.html#load">Load another game</a>
+      </div>
+    </div>
+
+    <div class="screen-frame" id="screen-frame">
+      <div id="game"></div>
+
+      <div class="screen-overlay" id="overlay">
+        <div class="overlay-inner" id="overlay-inner">
+          <div class="spinner" id="overlay-spinner"></div>
+          <h2 id="overlay-title">Warming up the cabinet</h2>
+          <p id="overlay-text">Fetching the emulator core. The first load takes a moment; after that it is cached.</p>
+          <div class="error-detail" id="overlay-detail" hidden></div>
+          <div class="console-picker" id="console-picker" hidden></div>
+          <div id="overlay-actions" hidden>
+            <a class="btn btn-ghost btn-sm" href="index.html#load">Back to the loader</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-grid" id="game-info">
+      <div class="info-card">
+        <h3>Controls</h3>
+        <p>
+          <span class="keycap">↑</span><span class="keycap">↓</span><span class="keycap">←</span><span class="keycap">→</span> d-pad ·
+          <span class="keycap">X</span> A · <span class="keycap">Z</span> B ·
+          <span class="keycap">A</span> Y · <span class="keycap">S</span> X ·
+          <span class="keycap">Enter</span> start · <span class="keycap">Shift</span> select
+        </p>
+        <p>Gamepads are detected automatically. Open the gear menu on the player to remap anything.</p>
+      </div>
+      <div class="info-card">
+        <h3>Save states</h3>
+        <p>Use the player's own toolbar to save, load and export a state. States live in this browser, on this device.</p>
+      </div>
+      <div class="info-card" id="credit-card" hidden>
+        <h3>About this game</h3>
+        <p id="credit-desc"></p>
+        <p id="credit-license"></p>
+        <p id="credit-links"></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <p>Games you load from your own device are read locally and never uploaded.</p>
+    <nav><a href="index.html">Home</a><a href="LICENSING.md">Licensing</a></nav>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/player.js"></script>
+</body>
+</html>

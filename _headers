@@ -1,0 +1,31 @@
+# Netlify / Cloudflare Pages header rules.
+
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  X-Frame-Options: SAMEORIGIN
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+
+# Cross-origin isolation unlocks multithreaded cores, which the heavier
+# consoles (Nintendo 64, PlayStation) benefit from a great deal.
+#
+# Do NOT enable these while the emulator cores are loaded from the EmulatorJS
+# CDN: isolation blocks every subresource that does not explicitly opt in, so
+# the player would stop loading entirely. Self-host the EmulatorJS data folder
+# first (see README), then uncomment. The player detects the change at runtime
+# and switches threading on by itself.
+#
+#/*
+#  Cross-Origin-Opener-Policy: same-origin
+#  Cross-Origin-Embedder-Policy: require-corp
+
+# Game files are opaque binaries. Serve them as downloads, and cache hard:
+# they never change once published.
+/games/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/data/games.json
+  Cache-Control: public, max-age=300

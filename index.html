@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Retro Arcade</title>
+<meta name="description" content="A free browser arcade for classic consoles. Play freely licensed homebrew in one click, or load a game file from your own machine. Nothing is uploaded anywhere.">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Retro Arcade">
+<meta property="og:description" content="Free browser emulation for NES, SNES, Game Boy, Genesis, Nintendo 64 and PlayStation.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="shell">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#05221c" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="7" width="20" height="12" rx="4"/>
+          <path d="M7 11v4M5 13h4"/>
+          <circle cx="16" cy="12.5" r="1.1" fill="#05221c" stroke="none"/>
+          <circle cx="18.5" cy="15" r="1.1" fill="#05221c" stroke="none"/>
+        </svg>
+      </span>
+      Retro Arcade
+    </a>
+    <span class="brand-sub">free &amp; open</span>
+    <span class="header-spacer"></span>
+    <nav class="header-links">
+      <a class="header-link" href="#library">Library</a>
+      <a class="header-link header-link-key" href="#load">Load a game</a>
+      <a class="header-link" href="#about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="shell">
+      <span class="eyebrow">No account · No download · No cost</span>
+      <h1>Classic consoles, running in your browser.</h1>
+      <p class="lede">
+        Pick something from the free library and it starts playing. Or drop in a game
+        file you already own and it runs the same way. Everything happens inside your
+        browser tab, so nothing you load is ever sent to a server.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#library">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3" fill="currentColor"/></svg>
+          Browse the library
+        </a>
+        <a class="btn btn-ghost" href="#load">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          Load your own file
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="shell" id="load">
+    <div class="dropzone" id="dropzone">
+      <div class="dropzone-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 16.6A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"/>
+          <polyline points="8.5 14.5 12 11 15.5 14.5"/>
+          <line x1="12" y1="11" x2="12" y2="21"/>
+        </svg>
+      </div>
+      <h2>Play a game file from this device</h2>
+      <p>
+        Drag a cartridge or disc file anywhere onto this box, or choose one below.
+        The file is read locally by your browser and never uploaded.
+      </p>
+      <button class="btn btn-primary" type="button" id="pick-file">Choose a file</button>
+      <input type="file" id="file-input" class="visually-hidden" accept="">
+      <p class="dropzone-note" id="dropzone-note">
+        NES · SNES · Game Boy · Game Boy Color · Game Boy Advance · Genesis · Master System · Game Gear · 32X · Nintendo 64 · PlayStation
+      </p>
+    </div>
+  </section>
+
+  <section class="shell section" id="library">
+    <div class="section-head">
+      <h2>Free game library</h2>
+      <p id="library-subtitle">Homebrew and freely licensed titles, playable in one click.</p>
+    </div>
+
+    <div class="toolbar">
+      <label class="search-field">
+        <span class="visually-hidden">Search the library</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.6" y2="16.6"/></svg>
+        <input type="search" id="search" placeholder="Search by title, author or genre" autocomplete="off">
+      </label>
+      <div class="filters" id="filters" role="group" aria-label="Filter by console"></div>
+      <span class="result-count" id="result-count"></span>
+    </div>
+
+    <ul class="grid" id="grid"></ul>
+    <div class="empty" id="empty" hidden>
+      <h3>Nothing here yet</h3>
+      <p id="empty-text">No games match that search.</p>
+    </div>
+  </section>
+
+  <section class="shell section" id="about">
+    <div class="section-head">
+      <h2>How this works</h2>
+    </div>
+
+    <div class="notice">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="13"/><line x1="12" y1="16.5" x2="12.01" y2="16.5"/></svg>
+      <div>
+        <h3>Why there are no commercial games here</h3>
+        <p>
+          Cartridge games from the eighties and nineties are still under copyright, and
+          copying them is not made legal by the passage of time. This site therefore hosts
+          only work whose authors have released it under a licence that permits sharing,
+          and every entry in the library names its licence and links back to the original
+          release.
+        </p>
+        <p>
+          For anything else, use the loader above: your own files stay on your own machine,
+          which is the one arrangement that is nobody's business but yours.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Controls</h3>
+        <p>Keyboard by default:</p>
+        <p>
+          <span class="keycap">↑</span><span class="keycap">↓</span><span class="keycap">←</span><span class="keycap">→</span> d-pad ·
+          <span class="keycap">X</span> A · <span class="keycap">Z</span> B ·
+          <span class="keycap">Enter</span> start · <span class="keycap">Shift</span> select
+        </p>
+        <p>Plug in a USB or Bluetooth gamepad and it is picked up automatically. On a phone or tablet, an on-screen pad appears.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Saving</h3>
+        <p>
+          The player supports save states: freeze exactly where you are, come back later.
+          States are kept in your browser's own storage, so they stay on the device you
+          made them on. You can also export a state to a file and load it anywhere.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Privacy</h3>
+        <p>
+          There are no accounts, no analytics and no trackers. A game file you load is
+          handed straight to the emulator running in your tab. It is not uploaded, not
+          logged and not retained.
+        </p>
+      </div>
+
+      <div class="info-card">
+        <h3>Performance</h3>
+        <p>
+          The 8-bit and 16-bit consoles run comfortably on almost anything, phones included.
+          Nintendo 64 and PlayStation ask considerably more of the machine and are best on a
+          desktop with hardware acceleration switched on.
+        </p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <p>
+      Retro Arcade is an independent hobby project. It is not affiliated with, endorsed
+      by or connected to Nintendo, Sega, Sony or any other console maker. Console names
+      are used only to describe compatibility.
+    </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="LICENSING.md">Licensing</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="module" src="assets/js/library.js"></script>
+</body>
+</html>
