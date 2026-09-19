@@ -1,0 +1,7 @@
+El Dueloroso
+by Adrián JG
+Licence: GPL-3.0
+Source: https://github.com/ajgalan/el-dueloroso
+Catalogued by: Homebrew Hub (gbdev) — https://hh.gbdev.io/entry/el-dueloroso
+Redistributed here under the terms above. If you are the author and
+would like this removed, contact the operator of this site.
